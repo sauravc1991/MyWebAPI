@@ -61,7 +61,6 @@ myApp.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
 
   //Function to edit a student record
   $scope.updateStudent = function (id) {
-    debugger;
     $http({
       method: 'PUT',
       url: '/api/data/' + id,
